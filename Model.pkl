@@ -1,0 +1,11 @@
+import pickle
+
+# Example: a trained scikit-learn model
+from sklearn.ensemble import RandomForestClassifier
+
+model = RandomForestClassifier()
+# Assume model is trained
+# model.fit(X_train, y_train)
+
+with open("model.pkl", "wb") as f:
+    pickle.dump(model, f)
